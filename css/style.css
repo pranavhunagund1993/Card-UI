@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #efefef;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#mainBlock > article{
+    background-color: #fff;
+    width: 25%;
+    margin: 30px auto;
+}
+
+#mainBlock article img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#mainBlock > article > header{
+    height: 250px;
+    position: relative;;
+}
+
+.line{
+    background-color: white;
+    width: 100%;
+    height: 92px;
+    transform: skew(0deg, -18deg);
+    position: absolute;
+    bottom: -65px;
+}
+
+#mainBlock > main{
+    position: relative;
+    border: 1px solid #333;
+    padding: 10px;
+}
+article>main,article>aside, article>footer{
+    position: relative;
+    z-index: 1;
+}
+
+.icon{
+    position: relative;
+}
+
+.icon span{
+    position: absolute;
+    top: -105px;
+    right: 15px;
+    background: linear-gradient(to bottom, #3366ff 0%, #33ccff 100%);
+    color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mainBlock :is(aside, header, #mainBlock main){
+    text-align: center;
+}
+
+#mainBlock header h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+#mainBlock :is(aside p, main p){
+    color: #999;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#mainBlock footer{
+    display: flex;
+    width: 100%;
+    /* height: 100px; */
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+#mainBlock footer .iconBlock i{
+    font-size: 30px;
+}
+
+.iconBlock i{
+    filter: grayscale(100%);
+}
+
+.iconBlock:first-child i{
+    background:  radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color:white;
+} 
+
+.iconBlock:nth-child(2) {
+    color: rgb(29, 155, 240);
+}
+
+.iconBlock:nth-child(3) {
+    color: blue;
+}
+
+.iconBlock :is(i):hover{
+    filter: grayscale(0);
+}
+
+#last_footer_part article{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+#last_footer_part article p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #888;
+}
+
+#last_footer_part h2{
+    font-size: 20px;
+    padding: 4px 0;
+}
+
+#last_footer_part :is(p, h2) {
+    text-align: center;
+  }
